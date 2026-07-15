@@ -22,7 +22,10 @@ const coupon = require("./routes/couponRoutes");
 // Middlewares
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://ai-food-delivery-9ome2z96f-madzy.vercel.app",
+    ],
     credentials: true,
   })
 );
